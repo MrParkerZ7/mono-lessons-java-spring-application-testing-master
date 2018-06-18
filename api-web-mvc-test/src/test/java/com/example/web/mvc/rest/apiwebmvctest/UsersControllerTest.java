@@ -27,9 +27,7 @@ public class UsersControllerTest {
 
     @Test
     public void valid_get_all() throws Exception {
-        when(usersRepository.findAll()).thenReturn(
-                Collections.emptyList()
-        );
+        when(usersRepository.findAll()).thenReturn(Collections.emptyList());
 
         mockMvc.perform(get("/all/")
                 .accept(MediaType.APPLICATION_JSON))

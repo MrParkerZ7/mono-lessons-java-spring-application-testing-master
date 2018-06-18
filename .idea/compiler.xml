@@ -9,12 +9,14 @@
         <module name="api-web-mvc-test" />
         <module name="automated-testing" />
         <module name="junit-test" />
+        <module name="testing-with-running-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-web-mvc-test" target="1.8" />
       <module name="automated-testing" target="1.8" />
       <module name="junit-test" target="1.8" />
+      <module name="testing-with-running-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

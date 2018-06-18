@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/api-web-mvc-test/pom.xml" />
         <option value="$PROJECT_DIR$/junit-test/pom.xml" />
         <option value="$PROJECT_DIR$/automated-testing/pom.xml" />
+        <option value="$PROJECT_DIR$/testing-with-running-server/pom.xml" />
       </list>
     </option>
   </component>

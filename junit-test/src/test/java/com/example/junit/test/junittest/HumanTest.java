@@ -26,6 +26,7 @@ public class HumanTest {
     @Test
     public void valid_evolution_stub() {
         given(this.evolution.getEvolution(this.human.getHp(), this.human.getMp())).willReturn((550));
+
         assertEquals(550, this.human.humanEvolution(this.evolution));
 
         // Verify our mock which we really call our mock or else
