@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/automated-testing/automated-testing.iml" filepath="$PROJECT_DIR$/automated-testing/automated-testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/junit-test/junit-test.iml" filepath="$PROJECT_DIR$/junit-test/junit-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/testing-spring-application-master.iml" filepath="$PROJECT_DIR$/testing-spring-application-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testing-with-running-server/testing-with-running-server.iml" filepath="$PROJECT_DIR$/testing-with-running-server/testing-with-running-server.iml" />
     </modules>
   </component>
 </project>

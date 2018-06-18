@@ -9,7 +9,6 @@
         <module name="api-web-mvc-test" />
         <module name="automated-testing" />
         <module name="junit-test" />
-        <module name="testing-with-running-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
