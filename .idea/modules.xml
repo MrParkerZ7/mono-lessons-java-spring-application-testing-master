@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/api-web-mvc-test/api-web-mvc-test.iml" filepath="$PROJECT_DIR$/api-web-mvc-test/api-web-mvc-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/automated-testing/automated-testing.iml" filepath="$PROJECT_DIR$/automated-testing/automated-testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/junit-test/junit-test.iml" filepath="$PROJECT_DIR$/junit-test/junit-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robot-automated-test/robot-automated-test.iml" filepath="$PROJECT_DIR$/robot-automated-test/robot-automated-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/testing-spring-application-master.iml" filepath="$PROJECT_DIR$/testing-spring-application-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webdemo/webdemo.iml" filepath="$PROJECT_DIR$/webdemo/webdemo.iml" />
     </modules>
   </component>
 </project>

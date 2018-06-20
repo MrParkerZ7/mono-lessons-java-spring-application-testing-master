@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20180620 14:17:21.528">
+<suite id="s1" name="Lazada" source="/Users/parker/Programming/IdeaProjects/testing-spring-application-master/robot-automated-test/Tests/Lazada.robot">
+<test id="s1-t1" name="User must search in IphoneS6 in Lazada">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.lazada.co.th/</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180620 14:17:21.734" level="INFO">Opening browser 'firefox' to base url 'https://www.lazada.co.th/'.</msg>
+<status status="PASS" starttime="20180620 14:17:21.733" endtime="20180620 14:17:30.759"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>IphoneS6</arg>
+</arguments>
+<msg timestamp="20180620 14:17:30.763" level="INFO">Typing text 'IphoneS6' into text field 'q'.</msg>
+<status status="PASS" starttime="20180620 14:17:30.761" endtime="20180620 14:17:30.897"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@class="search-box__button--1oH7"]</arg>
+</arguments>
+<msg timestamp="20180620 14:17:30.898" level="INFO">Clicking element 'xpath=//button[@class="search-box__button--1oH7"]'.</msg>
+<status status="PASS" starttime="20180620 14:17:30.898" endtime="20180620 14:17:33.002"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ค้นพบสินค้าสำหรับ "IphoneS6"</arg>
+</arguments>
+<status status="PASS" starttime="20180620 14:17:33.004" endtime="20180620 14:17:33.103"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180620 14:17:33.103" endtime="20180620 14:17:33.808"></status>
+</kw>
+<doc>Open and search in lazada</doc>
+<status status="PASS" starttime="20180620 14:17:21.733" endtime="20180620 14:17:33.808" critical="yes"></status>
+</test>
+<doc>Lazada robot test</doc>
+<status status="PASS" starttime="20180620 14:17:21.531" endtime="20180620 14:17:33.810"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Lazada">Lazada</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
