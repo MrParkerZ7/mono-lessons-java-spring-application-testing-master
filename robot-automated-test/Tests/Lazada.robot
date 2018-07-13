@@ -1,13 +1,15 @@
 *** Settings ***
-Documentation    Lazada robot test
+Documentation    Lazada Test
 Library          Selenium2Library
 
 *** Variable ***
+${WEB_URL}       https://www.lazada.co.th/
+${BROWSER}       firefox
 
 *** Test Case ***
-User must search in IphoneS6 in Lazada
-    [Documentation]             Open and search in lazada
-    Open Browser                https://www.lazada.co.th/                            firefox
+Search Product IphoneS6
+    [Documentation]             Search IphoneS6 result must be found or not found
+    Open Browser                ${WEB_URL}                                           ${BROWSER}
     Input Text                  q                                                    IphoneS6
     Click Element               xpath=//button[@class="search-box__button--1oH7"]
     Wait Until Page Contains    ค้นพบสินค้าสำหรับ "IphoneS6"

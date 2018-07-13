@@ -1,59 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20180620 14:17:21.528">
-<suite id="s1" name="Lazada" source="/Users/parker/Programming/IdeaProjects/testing-spring-application-master/robot-automated-test/Tests/Lazada.robot">
-<test id="s1-t1" name="User must search in IphoneS6 in Lazada">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20180622 11:52:16.755">
+<suite id="s1" name="Priceza" source="/Users/parker/Programming/IdeaProjects/testing-spring-application-master/robot-automated-test/Tests/Priceza.robot">
+<test id="s1-t1" name="Search Product">
+<kw name="Search Product">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
-<arg>https://www.lazada.co.th/</arg>
+<arg>https://www.priceza.com/</arg>
 <arg>firefox</arg>
 </arguments>
-<msg timestamp="20180620 14:17:21.734" level="INFO">Opening browser 'firefox' to base url 'https://www.lazada.co.th/'.</msg>
-<status status="PASS" starttime="20180620 14:17:21.733" endtime="20180620 14:17:30.759"></status>
+<msg timestamp="20180622 11:52:16.984" level="INFO">Opening browser 'firefox' to base url 'https://www.priceza.com/'.</msg>
+<status status="PASS" starttime="20180622 11:52:16.984" endtime="20180622 11:52:31.415"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza</arg>
+</arguments>
+<msg timestamp="20180622 11:52:31.423" level="INFO">Page title is 'เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza'.</msg>
+<status status="PASS" starttime="20180622 11:52:31.417" endtime="20180622 11:52:31.423"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>q</arg>
-<arg>IphoneS6</arg>
+<arg>searchHomeKeyword</arg>
+<arg>${product}</arg>
 </arguments>
-<msg timestamp="20180620 14:17:30.763" level="INFO">Typing text 'IphoneS6' into text field 'q'.</msg>
-<status status="PASS" starttime="20180620 14:17:30.761" endtime="20180620 14:17:30.897"></status>
+<msg timestamp="20180622 11:52:31.424" level="INFO">Typing text 'Electric Skateboard' into text field 'searchHomeKeyword'.</msg>
+<status status="PASS" starttime="20180622 11:52:31.423" endtime="20180622 11:52:31.541"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by ``locator``.</doc>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//button[@class="search-box__button--1oH7"]</arg>
+<arg>searchHomeBtn</arg>
 </arguments>
-<msg timestamp="20180620 14:17:30.898" level="INFO">Clicking element 'xpath=//button[@class="search-box__button--1oH7"]'.</msg>
-<status status="PASS" starttime="20180620 14:17:30.898" endtime="20180620 14:17:33.002"></status>
+<msg timestamp="20180622 11:52:31.542" level="INFO">Clicking button 'searchHomeBtn'.</msg>
+<status status="PASS" starttime="20180622 11:52:31.541" endtime="20180622 11:52:32.920"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${product} เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน</arg>
+</arguments>
+<msg timestamp="20180622 11:52:32.926" level="INFO">Page title is 'Electric Skateboard เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน'.</msg>
+<status status="PASS" starttime="20180622 11:52:32.920" endtime="20180622 11:52:32.927"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:16.983" endtime="20180622 11:52:32.927"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180622 11:52:32.928" endtime="20180622 11:52:33.842"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:16.982" endtime="20180622 11:52:33.843" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Search product with max price">
+<kw name="Search Product">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.priceza.com/</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180622 11:52:33.845" level="INFO">Opening browser 'firefox' to base url 'https://www.priceza.com/'.</msg>
+<status status="PASS" starttime="20180622 11:52:33.845" endtime="20180622 11:52:41.975"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza</arg>
+</arguments>
+<msg timestamp="20180622 11:52:41.981" level="INFO">Page title is 'เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza'.</msg>
+<status status="PASS" starttime="20180622 11:52:41.976" endtime="20180622 11:52:41.981"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>searchHomeKeyword</arg>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20180622 11:52:41.982" level="INFO">Typing text 'Electric Skateboard' into text field 'searchHomeKeyword'.</msg>
+<status status="PASS" starttime="20180622 11:52:41.981" endtime="20180622 11:52:42.134"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>searchHomeBtn</arg>
+</arguments>
+<msg timestamp="20180622 11:52:42.135" level="INFO">Clicking button 'searchHomeBtn'.</msg>
+<status status="PASS" starttime="20180622 11:52:42.135" endtime="20180622 11:52:43.694"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${product} เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน</arg>
+</arguments>
+<msg timestamp="20180622 11:52:43.704" level="INFO">Page title is 'Electric Skateboard เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน'.</msg>
+<status status="PASS" starttime="20180622 11:52:43.694" endtime="20180622 11:52:43.705"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:33.845" endtime="20180622 11:52:43.705"></status>
+</kw>
+<kw name="Define Max/Min Price">
+<arguments>
+<arg>search-price-max</arg>
+<arg>5000</arg>
+<arg>฿ 0 - 5,000</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_into}</arg>
+<arg>${price}</arg>
+</arguments>
+<msg timestamp="20180622 11:52:43.707" level="INFO">Typing text '5000' into text field 'search-price-max'.</msg>
+<status status="PASS" starttime="20180622 11:52:43.707" endtime="20180622 11:52:43.873"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class="btn"]</arg>
+</arguments>
+<msg timestamp="20180622 11:52:43.874" level="INFO">Clicking button '//button[@class="btn"]'.</msg>
+<status status="PASS" starttime="20180622 11:52:43.873" endtime="20180622 11:52:45.786"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
-<arg>ค้นพบสินค้าสำหรับ "IphoneS6"</arg>
+<arg>${expect_contain}</arg>
 </arguments>
-<status status="PASS" starttime="20180620 14:17:33.004" endtime="20180620 14:17:33.103"></status>
+<status status="PASS" starttime="20180622 11:52:45.786" endtime="20180622 11:52:45.810"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library">
+<status status="PASS" starttime="20180622 11:52:43.706" endtime="20180622 11:52:45.810"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20180620 14:17:33.103" endtime="20180620 14:17:33.808"></status>
+<status status="PASS" starttime="20180622 11:52:45.812" endtime="20180622 11:52:46.540"></status>
 </kw>
-<doc>Open and search in lazada</doc>
-<status status="PASS" starttime="20180620 14:17:21.733" endtime="20180620 14:17:33.808" critical="yes"></status>
+<status status="PASS" starttime="20180622 11:52:33.844" endtime="20180622 11:52:46.540" critical="yes"></status>
 </test>
-<doc>Lazada robot test</doc>
-<status status="PASS" starttime="20180620 14:17:21.531" endtime="20180620 14:17:33.810"></status>
+<test id="s1-t3" name="Search product with min price">
+<kw name="Search Product">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.priceza.com/</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20180622 11:52:46.543" level="INFO">Opening browser 'firefox' to base url 'https://www.priceza.com/'.</msg>
+<status status="PASS" starttime="20180622 11:52:46.542" endtime="20180622 11:52:51.826"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza</arg>
+</arguments>
+<msg timestamp="20180622 11:52:51.832" level="INFO">Page title is 'เปรียบเทียบราคาและเช็คราคาล่าสุดก่อนซื้อสินค้าทุกครั้งที่ Priceza'.</msg>
+<status status="PASS" starttime="20180622 11:52:51.827" endtime="20180622 11:52:51.832"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>searchHomeKeyword</arg>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20180622 11:52:51.834" level="INFO">Typing text 'Electric Skateboard' into text field 'searchHomeKeyword'.</msg>
+<status status="PASS" starttime="20180622 11:52:51.833" endtime="20180622 11:52:52.012"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>searchHomeBtn</arg>
+</arguments>
+<msg timestamp="20180622 11:52:52.012" level="INFO">Clicking button 'searchHomeBtn'.</msg>
+<status status="PASS" starttime="20180622 11:52:52.012" endtime="20180622 11:52:53.256"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>${product} เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน</arg>
+</arguments>
+<msg timestamp="20180622 11:52:53.261" level="INFO">Page title is 'Electric Skateboard เช็คราคาล่าสุด ราคาถูก ราคาปัจจุบัน'.</msg>
+<status status="PASS" starttime="20180622 11:52:53.257" endtime="20180622 11:52:53.261"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:46.542" endtime="20180622 11:52:53.261"></status>
+</kw>
+<kw name="Define Max/Min Price">
+<arguments>
+<arg>search-price-min</arg>
+<arg>5000</arg>
+<arg>฿ 5,000 - สูงสุด</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_into}</arg>
+<arg>${price}</arg>
+</arguments>
+<msg timestamp="20180622 11:52:53.263" level="INFO">Typing text '5000' into text field 'search-price-min'.</msg>
+<status status="PASS" starttime="20180622 11:52:53.262" endtime="20180622 11:52:53.386"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class="btn"]</arg>
+</arguments>
+<msg timestamp="20180622 11:52:53.387" level="INFO">Clicking button '//button[@class="btn"]'.</msg>
+<status status="PASS" starttime="20180622 11:52:53.386" endtime="20180622 11:52:54.361"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${expect_contain}</arg>
+</arguments>
+<status status="PASS" starttime="20180622 11:52:54.362" endtime="20180622 11:52:54.371"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:53.262" endtime="20180622 11:52:54.371"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180622 11:52:54.372" endtime="20180622 11:52:55.029"></status>
+</kw>
+<status status="PASS" starttime="20180622 11:52:46.540" endtime="20180622 11:52:55.030" critical="yes"></status>
+</test>
+<doc>Priceza Test
+Web is Runing
+Search is working
+Search with max price
+Search with min price</doc>
+<status status="PASS" starttime="20180622 11:52:16.759" endtime="20180622 11:52:55.031"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Lazada">Lazada</stat>
+<stat pass="3" fail="0" id="s1" name="Priceza">Priceza</stat>
 </suite>
 </statistics>
 <errors>

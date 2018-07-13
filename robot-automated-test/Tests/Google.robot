@@ -9,8 +9,9 @@ Library          Selenium2Library
 Search park in google
     [Documentation]             Search google with Park Keywords
     Open Browser                https://www.google.co.th/           firefox
+    Set Selenium Speed          0.5                                 #Delay time
     Wait Until Page Contains    Google
-    Input Text                  gs_taif0                            Park  #autocomplate was disabled
+    Input Text                  lst-ib                              Park
     Close Browser
 
 *** Keywords ***
